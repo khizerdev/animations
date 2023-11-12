@@ -33,6 +33,24 @@ const routes = [
     name: "cards",
     component: () => import(/* webpackChunkName: "list" */ "./pages/Cards.vue"),
   },
+  {
+    path: "/simple",
+    name: "simple",
+    component: () =>
+      import(/* webpackChunkName: "simple" */ "./pages/Simple.vue"),
+  },
+  {
+    path: "/stagger",
+    name: "stagger",
+    component: () =>
+      import(/* webpackChunkName: "stagger" */ "./pages/Stagger.vue"),
+  },
+  {
+    path: "/state",
+    name: "state",
+    component: () =>
+      import(/* webpackChunkName: "state" */ "./pages/State.vue"),
+  },
 ];
 
 const router = createRouter({
