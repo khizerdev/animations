@@ -22,6 +22,17 @@ const routes = [
     name: "list",
     component: List,
   },
+  {
+    path: "/drawer",
+    name: "drawer",
+    component: () =>
+      import(/* webpackChunkName: "list" */ "./pages/Drawer.vue"),
+  },
+  {
+    path: "/cards",
+    name: "cards",
+    component: () => import(/* webpackChunkName: "list" */ "./pages/Cards.vue"),
+  },
 ];
 
 const router = createRouter({
